@@ -4,8 +4,21 @@ app.config(['$routeProvider',
   function($routeProvider) {
     $routeProvider
       .when('/', {
-        templateUrl: 'partials/landingPage.html',
-        controller: 'SidebarCtrl'
-      });
+        templateUrl: 'view/landingPage.html',
+        controller: 'LandingPageCtrl'
+      })
+      // .when('/grab', {
+      //   templateUrl: 'view/landingPage.html',
+      //   controller: 'LandingPageCtrl'
+      // })
+      // .when('/mylist', {
+      //   templateUrl: 'view/landingPage.html',
+      //   controller: 'LandingPageCtrl'
+      // })
+      // .when('/browse', {
+      //   templateUrl: 'view/landingPage.html',
+      //   controller: 'LandingPageCtrl'
+      // })
+      ;
   }
 ]);

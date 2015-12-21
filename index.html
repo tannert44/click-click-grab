@@ -1,5 +1,5 @@
 <DOCTYPE! html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <title>Click-click-grab</title>
@@ -8,12 +8,12 @@
     <link rel="stylesheet" href="/lib/bower_components/font-awesome/css/font-awesome.min.css" />
     <link rel="stylesheet" href="styles/main.css">
   </head>
-  <body ng-app="clickClickGrab">
+  <body ng-app="clickClickGrabApp">
 
-      <div id="sidebar">
+      <!-- <div id="sidebar">
         <span id="username">Tanner Terry</span>
         <ul class="nav">
-            <li class="active"><a href="#/home">Home</a></li>
+            <li class="active"><a href="#/grab">Grab</a></li>
             <li><a href="#/mylist">My List</a></li>
             <li><a href="#/browse">Browse</a></li>
         </ul>
@@ -31,7 +31,7 @@
                 </ul>
                 <a href="#/" class="navbar-brand">Click-click-Grab</a>
             </div>
-        </nav>
+        </nav> -->
 
       <div class="main" ng-view></div>
 
@@ -43,5 +43,7 @@
       <script src="lib/bower_components/angularfire/dist/angularfire.min.js"></script>
       <script src="lib/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
       <script src="app/app.js"></script>
+      <script src="app/directives/SideBarCtrl.js"></script>
+      <script src="app/controllers/LandingPageCtrl.js"></script>
   </body>
 </html>

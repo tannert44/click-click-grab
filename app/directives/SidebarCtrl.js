@@ -1,5 +1,5 @@
-app.controller( 'SidebarCtrl', [ 'ngRoute'
-  '$scope'
+app.controller( 'SidebarCtrl', [
+  '$scope',
   function($scope){
     // SidebarCtrl.js
 
@@ -19,4 +19,8 @@ app.controller( 'SidebarCtrl', [ 'ngRoute'
     
   }
 
-]);
+]).directive('sidebar', function() {
+  return {
+    templateUrl: 'view/sidebar.html'
+  };
+});
