@@ -7,18 +7,18 @@ app.config(['$routeProvider',
         templateUrl: 'view/landingPage.html',
         controller: 'LandingPageCtrl'
       })
-      // .when('/grab', {
-      //   templateUrl: 'view/landingPage.html',
-      //   controller: 'LandingPageCtrl'
-      // })
-      // .when('/mylist', {
-      //   templateUrl: 'view/landingPage.html',
-      //   controller: 'LandingPageCtrl'
-      // })
-      // .when('/browse', {
-      //   templateUrl: 'view/landingPage.html',
-      //   controller: 'LandingPageCtrl'
-      // })
+      .when('/grab', {
+        templateUrl: 'view/grab.html',
+        controller: 'GrabCtrl'
+      })
+      .when('/mylist', {
+        templateUrl: 'view/browse.html',
+        controller: 'BrowseCtrl'
+      })
+      .when('/browse', {
+        templateUrl: 'view/my_list.html',
+        controller: 'MyListCtrl'
+      })
       ;
   }
 ]);
